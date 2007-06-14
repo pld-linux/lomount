@@ -1,7 +1,7 @@
 Summary:	lomount - utility to mount partitions in a hard disk image
 Name:		lomount
 Version:	0
-Release:	0.1
+Release:	0.2
 License:	BSD-like
 Group:		Applications/System
 Source0:	%{name}.c
@@ -15,7 +15,7 @@ Utility to mount partitions in a hard disk image.
 cp %{SOURCE0} .
 
 %build
-%{__cc} %{rpmcflags} -W -Wall -DFILEOFFSET_BITS=64 %{rpmldflags} lomount.c -o lomount
+%{__cc} %{rpmcflags} -W -Wall -D_FILE_OFFSET_BITS=64 %{rpmldflags} lomount.c -o lomount
 
 %install
 rm -rf $RPM_BUILD_ROOT
