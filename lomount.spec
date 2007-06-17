@@ -1,4 +1,5 @@
 Summary:	lomount - utility to mount partitions in a hard disk image
+Summary(pl.UTF-8):	lomount - narzędzie do montowania partycji z obrazów twardych dysków
 Name:		lomount
 Version:	0
 Release:	0.2
@@ -9,6 +10,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Utility to mount partitions in a hard disk image.
+
+%description -l pl.UTF-8
+Narzędzie do montowania partycji z obrazów twardych dysków.
 
 %prep
 %setup -q -c -T
